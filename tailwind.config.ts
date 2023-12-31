@@ -1,20 +1,38 @@
-import type { Config } from 'tailwindcss'
+import { type Config } from "tailwindcss";
+import { fontFamily } from "tailwindcss/defaultTheme";
 
-const config: Config = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+export default {
+  content: ["./src/**/*.tsx"],
   theme: {
+    screens: {
+      usm: "360px",
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1280px",
+      // => @media (min-width: 1280px) { ... }
+
+      xxl: "1440px",
+      // => @media (min-width: 1536px) { ... }
+    },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        sans: ["var(--font-sans)", ...fontFamily.sans],
+        rosarivo: ["Rosarivo"],
+        rokkitt: ["Rokkitt"],
+        montserrat: ["Montserrat"],
+        mulish: ["Mulish"],
+        arima: ["var(--font-arima)"],
+        notable: ["var(--font-notable)"],
+        roboto: ["var(--font-roboto)"],
       },
     },
   },
   plugins: [],
-}
-export default config
+} satisfies Config;
