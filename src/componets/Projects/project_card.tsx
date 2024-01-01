@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image, { StaticImageData } from "next/image";
-import { motion } from "framer-motion";
-import Link from "next/link";
+import { ImNewTab } from "react-icons/im";
 
 interface ProjectCardProps {
   title: string;
@@ -53,8 +52,29 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
             hoverState ? "rounded-[40px] bg-black" : "rounded-md bg-[#270082]"
           }`}
         >
-          <div className="text-lg uppercase text-white rounded-xl">
-            Learn More
+          <div className=" flex items-center justify-center text-lg uppercase text-white rounded-xl ">
+            {hoverState ? (
+              <div id="move" className="flex flex-row gap-22">
+                <div className="mx-10">Checkout</div>
+                <div className="mx-10">Checkout</div>
+                <div className="mx-10">Checkout</div>
+                <div className="mx-10">Checkout</div>
+                <div className="mx-10">Checkout</div>
+                <div className="mx-10">Checkout</div>
+                <div className="mx-10">Checkout</div>
+                <div className="mx-10">Checkout</div>
+                <div className="mx-10">Checkout</div>
+                <div className="mx-10">Checkout</div>
+                <div className="mx-10">Checkout</div>
+                <div className="mx-10">Checkout</div>
+                <div className="mx-10">Checkout</div>
+                <div className="mx-10">Checkout</div>
+              </div>
+            ) : (
+              <div className="flex flex-row gap-2 items-center justify-center">
+                Checkout <ImNewTab />
+              </div>
+            )}
           </div>
         </a>
       </div>
