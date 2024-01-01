@@ -1,18 +1,11 @@
-import ProjectCard from "@/componets/project_card";
+import ProjectCard from "@/componets/Projects/project_card";
+import Projects from "@/componets/Projects/projects";
 import React from "react";
-import thumbnail from "../assets/thumbnails/thumbnail1.png";
 
 const homePage = () => {
   return (
-    <div className="h-[100vh] w-[100vw] bg-black flex items-center justify-center ">
-      <div className="h-[70vh] w-[20vw] rounded-md">
-        <ProjectCard
-          image={thumbnail}
-          redirect="google.com"
-          title="CookOff 8.0 Admin Portal"
-          techstack="ReactJS • NextJS"
-        />
-      </div>
+    <div className="h-[100vh] w-[100vw] bg-[#131313]">
+      <Projects />
     </div>
   );
 };

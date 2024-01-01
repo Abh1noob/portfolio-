@@ -1,7 +1,14 @@
-import ProjectCard from "@/componets/project_card";
-import React from "react";
-import thumbnail from "../assets/thumbnails/thumbnail1.png";
+import React, { useEffect } from "react";
+import { useRouter } from "next/router";
 
 export default function Home() {
-  return <main className=""></main>;
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push("/homepage");
+  }, []);
+
+  return <main className="">
+    
+  </main>;
 }
