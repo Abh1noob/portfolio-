@@ -1,0 +1,67 @@
+export const projectList = [
+  {
+    title: "CookOff 8.0 - Admin Portal",
+    redirect: "https://github.com/CodeChefVIT/cookoff23-admin",
+    image: [
+      "/assets/Images/Projects/Cookoff-Admin/1.png",
+      "/assets/Images/Projects/Cookoff-Admin/2.png",
+      "/assets/Images/Projects/Cookoff-Admin/3.png",
+      "/assets/Images/Projects/Cookoff-Admin/4.png",
+      "/assets/Images/Projects/Cookoff-Admin/5.png",
+      "/assets/Images/Projects/Cookoff-Admin/6.png",
+    ],
+    techstack: "NextJS • TailwindCSS • Framer-Motion",
+  },
+  {
+    title: "CookOff 8.0 - Admin Portal",
+    redirect: "https://github.com/CodeChefVIT/cookoff23-admin",
+    image: [
+      "/assets/Images/Projects/Cookoff-Admin/1.png",
+      "/assets/Images/Projects/Cookoff-Admin/2.png",
+      "/assets/Images/Projects/Cookoff-Admin/3.png",
+      "/assets/Images/Projects/Cookoff-Admin/4.png",
+      "/assets/Images/Projects/Cookoff-Admin/5.png",
+      "/assets/Images/Projects/Cookoff-Admin/6.png",
+    ],
+    techstack: "NextJS • TailwindCSS • Framer-Motion",
+  },
+  {
+    title: "CookOff 8.0 - Admin Portal",
+    redirect: "https://github.com/CodeChefVIT/cookoff23-admin",
+    image: [
+      "/assets/Images/Projects/Cookoff-Admin/1.png",
+      "/assets/Images/Projects/Cookoff-Admin/2.png",
+      "/assets/Images/Projects/Cookoff-Admin/3.png",
+      "/assets/Images/Projects/Cookoff-Admin/4.png",
+      "/assets/Images/Projects/Cookoff-Admin/5.png",
+      "/assets/Images/Projects/Cookoff-Admin/6.png",
+    ],
+    techstack: "NextJS • TailwindCSS • Framer-Motion",
+  },
+  {
+    title: "CookOff 8.0 - Admin Portal",
+    redirect: "https://github.com/CodeChefVIT/cookoff23-admin",
+    image: [
+      "/assets/Images/Projects/Cookoff-Admin/1.png",
+      "/assets/Images/Projects/Cookoff-Admin/2.png",
+      "/assets/Images/Projects/Cookoff-Admin/3.png",
+      "/assets/Images/Projects/Cookoff-Admin/4.png",
+      "/assets/Images/Projects/Cookoff-Admin/5.png",
+      "/assets/Images/Projects/Cookoff-Admin/6.png",
+    ],
+    techstack: "NextJS • TailwindCSS • Framer-Motion",
+  },
+  {
+    title: "CookOff 8.0 - Admin Portal",
+    redirect: "https://github.com/CodeChefVIT/cookoff23-admin",
+    image: [
+      "/assets/Images/Projects/Cookoff-Admin/1.png",
+      "/assets/Images/Projects/Cookoff-Admin/2.png",
+      "/assets/Images/Projects/Cookoff-Admin/3.png",
+      "/assets/Images/Projects/Cookoff-Admin/4.png",
+      "/assets/Images/Projects/Cookoff-Admin/5.png",
+      "/assets/Images/Projects/Cookoff-Admin/6.png",
+    ],
+    techstack: "NextJS • TailwindCSS • Framer-Motion",
+  },
+];

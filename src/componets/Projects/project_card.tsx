@@ -22,9 +22,9 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
 
   return (
     <div
-      className={`flex flex-col justify-between bg-white shadow-white border-2 border-white h-[70vh] w-[22vw] text-black rounded-md transition-all duration-300 ease-in-out overflow-hidden ${
+      className={`flex flex-col justify-between bg-[#8ECAE6] shadow-white border-2 border-white h-[70vh] w-[25vw] text-black rounded-md transition-all duration-300 ease-in-out overflow-hidden ${
         hoverState
-          ? "hover:rounded-[40px] hover:shadow-black hover:scale-105 hover:shadow-lg"
+          ? "hover:rounded-[40px] hover:shadow-[#219EBC] hover:scale-105 hover:shadow-lg"
           : ""
       }`}
       onMouseEnter={() => setHoverState(true)}
@@ -33,10 +33,10 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
       <div className="items-center flex flex-col justify-evenly ">
         <Image
           src={props.image[Index]}
-          width={10000}
-          height={10000}
+          width={1000}
+          height={1000}
           alt="Thumbnail"
-          className="h-[30vh] w-[25vw]"
+          className="h-[35vh] w-[25vw]"
           quality={100}
         />
 
@@ -49,7 +49,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
           target="_blank"
           rel="noopener noreferrer"
           className={`h-[6vh] w-[80%]  cursor-pointer flex items-center justify-center flex-col transition-all duration-300 ease-in-out overflow-hidden ${
-            hoverState ? "rounded-[40px] bg-black" : "rounded-md bg-[#270082]"
+            hoverState ? "rounded-[40px] bg-black" : "rounded-md bg-[#219EBC]"
           }`}
         >
           <div className=" flex items-center justify-center text-lg uppercase text-white rounded-xl ">
