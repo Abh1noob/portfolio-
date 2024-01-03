@@ -22,9 +22,9 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
 
   return (
     <div
-      className={`flex flex-col justify-between bg-[#8ECAE6] shadow-white border-2 border-white h-[70vh] w-[25vw] text-black rounded-md transition-all duration-300 ease-in-out overflow-hidden ${
+      className={`flex flex-col justify-between bg-[#E84545] shadow-white hover:border-2 border-white h-[70vh] w-[25vw] text-black rounded-md transition-all duration-300 ease-in-out overflow-hidden ${
         hoverState
-          ? "hover:rounded-[40px] hover:shadow-[#219EBC] hover:scale-105 hover:shadow-lg"
+          ? "hover:rounded-[40px] hover:shadow-[#903749] hover:scale-105 hover:shadow-lg"
           : ""
       }`}
       onMouseEnter={() => setHoverState(true)}
@@ -40,7 +40,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
           quality={100}
         />
 
-        <div className="text-gray-500 font-mono my-4">{props.techstack}</div>
+        <div className="text- font-mono my-4 text-sm">{props.techstack}</div>
         <div className="text-[40px] px-[10%] ">{props.title}</div>
       </div>
       <div className="flex items-center justify-evenly flex-col h-full w-full">
@@ -49,7 +49,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
           target="_blank"
           rel="noopener noreferrer"
           className={`h-[6vh] w-[80%]  cursor-pointer flex items-center justify-center flex-col transition-all duration-300 ease-in-out overflow-hidden ${
-            hoverState ? "rounded-[40px] bg-black" : "rounded-md bg-[#219EBC]"
+            hoverState ? "rounded-[40px] bg-black" : "rounded-md bg-[#53354A]"
           }`}
         >
           <div className=" flex items-center justify-center text-lg uppercase text-white rounded-xl ">

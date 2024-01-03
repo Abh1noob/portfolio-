@@ -24,13 +24,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
-        rosarivo: ["Rosarivo"],
-        rokkitt: ["Rokkitt"],
-        montserrat: ["Montserrat"],
-        mulish: ["Mulish"],
-        arima: ["var(--font-arima)"],
-        notable: ["var(--font-notable)"],
-        roboto: ["var(--font-roboto)"],
+        tt_trailers:["var(--font-tt_trailers)"]
       },
     },
   },

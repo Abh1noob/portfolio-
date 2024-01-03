@@ -2,8 +2,8 @@ import React from "react";
 
 const Brief = () => {
   return (
-    <div className="h-[100vh] w-[100vw] flex items-center justify-center bg-[#023047] text-white">
-      <p className="text-[100px]">Brief</p>
+    <div className="h-[100vh] w-[100vw] flex items-center justify-center bg-[#222831] text-white">
+      <p className="text-[100px] font-tt_trailers">Brief</p>
     </div>
   );
 };
