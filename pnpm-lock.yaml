@@ -29,6 +29,12 @@ dependencies:
   react-icons:
     specifier: ^4.12.0
     version: 4.12.0(react@18.2.0)
+  react-next-tilt:
+    specifier: ^0.4.3
+    version: 0.4.3(react-dom@18.2.0)(react@18.2.0)
+  react-parallax-tilt:
+    specifier: ^1.7.180
+    version: 1.7.180(react-dom@18.2.0)(react@18.2.0)
   sharp:
     specifier: ^0.33.1
     version: 0.33.1
@@ -2494,6 +2500,26 @@ packages:
 
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+
+  /react-next-tilt@0.4.3(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-zvvYa0g1xRGEAE2q7HHbQ68NCShrbhsKkczQ2IsoQulgXxbEIN9GILzGv4KvqvvCN/cZlSv8k9phpsG27RmSoQ==}
+    peerDependencies:
+      react: '>= 16.8 || ^18.2.0'
+      react-dom: '>= 16.8 || ^18.2.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /react-parallax-tilt@1.7.180(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-xX2u7rG1S7qnrPWJkLo1kpPUd5AtNg0XKOBtQ1DRCX059xl+eN2awf/U0VBzYkLxq2mx8Jc51qptOMvcKFNkcA==}
+    peerDependencies:
+      react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
 
   /react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}

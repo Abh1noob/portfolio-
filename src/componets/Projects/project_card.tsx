@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { ImNewTab } from "react-icons/im";
 
 interface ProjectCardProps {
@@ -14,7 +14,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
   const [Index, setIndex] = useState(0);
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % props.image.length);
+      setIndex((prevIndex) => (prevIndex + 1) % (props.image).length);
     }, 3000);
 
     return () => clearInterval(intervalId);

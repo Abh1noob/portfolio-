@@ -11,7 +11,7 @@ const Projects = () => {
             <div className="flex flex-row gap-6 overflow-x-auto items-center w-full p-3  h-[80vh]">
               {projectList.map((items, i) => {
                 return (
-                  <div className="w-auto">
+                  <div className="w-auto" key={i}>
                     <ProjectCard
                       key={i}
                       title={items.title}
