@@ -30,7 +30,12 @@ const Skills = () => {
           <div className="flex flex-col items-center justify-center h-[80vh]">
             <ul className="flex flex-wrap justify-center gap-6 text-lg text-gray-800 w-[50vw]">
               {skills.map((skill, index) => (
-                <Tilt borderRadius="0.75rem" scale={1.1} spotGlareReverse={true} spotGlareMaxOpacity={0.5} >
+                <Tilt
+                  borderRadius="0.75rem"
+                  scale={1.1}
+                  spotGlareReverse={true}
+                  spotGlareMaxOpacity={0.5}
+                >
                   <motion.li
                     className="bg-[#E84545] rounded-xl px-5 py-3"
                     key={index}

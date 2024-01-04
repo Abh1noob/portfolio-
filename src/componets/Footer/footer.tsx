@@ -1,7 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import divider from "../../../public/assets/other/divider.svg";
+
+
 const Footer = () => {
+  
+  
   return (
     <div className="w-[100vw]">
       <Image
