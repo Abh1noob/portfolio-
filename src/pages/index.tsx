@@ -1,35 +1,32 @@
 import React from "react";
 import Projects from "@/componets/Projects/projects";
-import About from "@/componets/About/about";
 import Footer from "@/componets/Footer/footer";
 import Skills from "@/componets/Skills/skills";
-import Brief from "@/componets/Brief/brief";
-import Navbar from "@/componets/Navbar/navbar";
+import About from "@/componets/About/about";
 import SmoothScrolling from "@/componets/SmoothScrolling";
+import Home from "@/componets/Home/home";
 
-export default function Home() {
+export default function Main() {
   return (
     <>
       <main className="overflow-x-auto scroll-smooth">
         <title>Abhinav | Portfolio</title>
         <SmoothScrolling>
-          <div>
-            <section id="Home" className="scroll-mt-12 ">
-              <About />
-            </section>
-            <section id="About" className="scroll-mt-6 ">
-              <Brief />
-            </section>
-            <section id="Skills" className="scroll-mt-6 ">
-              <Skills />
-            </section>
-            <section id="Projects" className="scroll-mt-6 ">
-              <Projects />
-            </section>
-            <section id="Contact" className="scroll-mt-6 ">
-              <Footer />
-            </section>
-          </div>
+          <section id="Home" className="scroll-mt-12 ">
+            <Home />
+          </section>
+          <section id="About" className="scroll-mt-6 ">
+            <About />
+          </section>
+          <section id="Skills" className="scroll-mt-6 ">
+            <Skills />
+          </section>
+          <section id="Projects" className="scroll-mt-6 ">
+            <Projects />
+          </section>
+          <section id="Contact" className="scroll-mt-6 ">
+            <Footer />
+          </section>
         </SmoothScrolling>
       </main>
     </>

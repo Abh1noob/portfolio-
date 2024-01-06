@@ -7,14 +7,13 @@ const tt_trailers = localFont({
     {
       path: "../../public/assets/fonts/TT Traillers.ttf",
     },
-
   ],
   variable: "--font-tt_trailers",
 });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${tt_trailers.variable}`}>
+    <main className={`${tt_trailers.variable} `}>
       <Component {...pageProps} />
     </main>
   );
