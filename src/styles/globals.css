@@ -24,6 +24,7 @@ html.lenis {
 
 html{
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 /* Button Scroller */
 #move {
@@ -64,3 +65,5 @@ html{
     transform: translateX(-100%);
   }
 }
+
+
