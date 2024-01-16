@@ -18,9 +18,6 @@ const Home = () => {
         <div className="text-[300px] text-white font-tt_trailers tracking-wider">
           Abhinav
         </div>
-        <div className={`${scrollP >= 485 ? "fixed top-0 z-50" : ""}`}>
-          <Navbar />
-        </div>
       </div>
       <div className="flex flex-row justify-between items-center h-[8vh] w-[100vw] bg-[#222831] p-6">
         <div>hello</div>
