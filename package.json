@@ -23,6 +23,7 @@
     "react-next-tilt": "^0.4.3",
     "react-parallax-tilt": "^1.7.180",
     "sharp": "^0.33.1",
+    "split-type": "^0.3.4",
     "tailwind-scrollbar": "^3.0.5",
     "tailwind-scrollbar-hide": "^1.1.7"
   },

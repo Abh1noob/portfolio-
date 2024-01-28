@@ -3,6 +3,7 @@ import lottie from "../../../public/assets/other/lottie.json";
 import Lottie from "lottie-react";
 import { motion } from "framer-motion";
 
+
 const About = () => {
   return (
     <div className="flex flex-row items-center justify-around text-white h-[100vh] w-[100vw] bg-[#222831]">

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { useRef } from "react";
+import { gsap } from "gsap";
+import SplitType from "split-type";
 
 const About1 = () => {
   const ref = useRef(null);
@@ -10,13 +12,13 @@ const About1 = () => {
     offset: ["0.5 1", "0 0.2"],
   });
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    console.log("Page scroll: ", latest);
+    // console.log("Page scroll: ", latest);
     setPosY(latest);
   });
   return (
-    <div className="h-[100vh] w-[100vw]  bg-[#222831]  flex items-center justify-center text-[50px] px-10" >
-      <p style={{ opacity: posY }} ref={ref} className = "split-word">
-        A Computer Science undergrad student at VIT Vellore, I'm skilled in
+    <div className="h-[100vh] w-[100vw]  bg-[#222831] text-white flex items-center justify-center text-[50px] px-10">
+      <p>
+        A Computer Science undergrad student at VIT Vellore, I&apos;m skilled in
         Flutter and Next.js, always eager to learn new things.
       </p>
     </div>

@@ -29,8 +29,9 @@ const Skills = () => {
           </div>
           <div className="flex flex-col items-center justify-center h-[80vh]">
             <ul className="flex flex-wrap justify-center gap-6 text-lg text-gray-800 w-[50vw]">
-              {skills.map((skill, index) => (
+              {skills.map((skill, i) => (
                 <Tilt
+                  key={i}
                   borderRadius="0.75rem"
                   scale={1.1}
                   spotGlareReverse={true}
@@ -38,14 +39,14 @@ const Skills = () => {
                 >
                   <motion.li
                     className="bg-[#E84545] rounded-xl px-5 py-3"
-                    key={index}
+                    key={i}
                     variants={fadeInAnimationVariants}
                     initial="initial"
                     whileInView="animate"
                     viewport={{
                       once: true,
                     }}
-                    custom={index}
+                    custom={i}
                   >
                     <div className="flex flex-col items-center m-1">
                       <div className="mb-3">
