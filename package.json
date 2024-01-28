@@ -22,10 +22,12 @@
     "react-icons": "^4.12.0",
     "react-next-tilt": "^0.4.3",
     "react-parallax-tilt": "^1.7.180",
+    "react-scroll-horizontal": "^1.6.6",
     "sharp": "^0.33.1",
     "split-type": "^0.3.4",
     "tailwind-scrollbar": "^3.0.5",
-    "tailwind-scrollbar-hide": "^1.1.7"
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "zustand": "^4.5.0"
   },
   "devDependencies": {
     "@types/node": "^20",

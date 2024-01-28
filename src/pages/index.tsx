@@ -19,7 +19,6 @@ export default function Main() {
   });
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    console.log("Page scroll: ", latest);
     setPosY(latest);
   });
 
@@ -30,17 +29,17 @@ export default function Main() {
         <SmoothScrolling>
           <div className="absolute">
             <div ref={ref} className="h-[60vh] w-screen"></div>
-            <section className={`${posY == 1 ? "fixed top-0 z-10" : ""}`}>
+            <section className={`${posY == 1 ? "fixed top-0 z-50" : ""}`}>
               <Navbar />
             </section>
           </div>
           <section id="Home" className="scroll-mt-12">
             <Home />
           </section>
-          <section id="About" className="scroll-mt-6 ">
+          <section id="About" className="scroll-mt-6">
             <About />
           </section>
-          <section id="Skills" className="scroll-mt-6 ">
+          <section id="Skills" className="scroll-mt-6">
             <Skills />
           </section>
           <section id="Projects" className="scroll-mt-6 ">

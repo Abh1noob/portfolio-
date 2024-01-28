@@ -44,6 +44,9 @@ dependencies:
   react-parallax-tilt:
     specifier: ^1.7.180
     version: 1.7.180(react-dom@18.2.0)(react@18.2.0)
+  react-scroll-horizontal:
+    specifier: ^1.6.6
+    version: 1.6.6(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
   sharp:
     specifier: ^0.33.1
     version: 0.33.1
@@ -56,6 +59,9 @@ dependencies:
   tailwind-scrollbar-hide:
     specifier: ^1.1.7
     version: 1.1.7
+  zustand:
+    specifier: ^4.5.0
+    version: 4.5.0(@types/react@18.2.46)(react@18.2.0)
 
 devDependencies:
   '@types/node':
@@ -537,7 +543,7 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       rimraf: 5.0.5
-      zustand: 4.4.7(@types/react@18.2.46)(react@18.2.0)
+      zustand: 4.5.0(@types/react@18.2.46)(react@18.2.0)
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -559,7 +565,7 @@ packages:
       prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      zustand: 4.4.7(@types/react@18.2.46)(react@18.2.0)
+      zustand: 4.5.0(@types/react@18.2.46)(react@18.2.0)
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -2364,6 +2370,10 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /performance-now@0.2.0:
+    resolution: {integrity: sha512-YHk5ez1hmMR5LOkb9iJkLKqoBlL7WD5M8ljC75ZfzXriuBIVNuecaXuU7e+hOwyqf24Wxhh7Vxgt7Hnw9288Tg==}
+    dev: false
+
   /performance-now@2.1.0:
     resolution: {integrity: sha512-7EAHlyLHI56VEIdK57uwHdHKIaAGbnXPiw0yWbarQZOKaKpvUIgW0jWRVLiatnM+XXlSwsanIBH/hzGMJulMow==}
     dev: false
@@ -2529,6 +2539,17 @@ packages:
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
+  /react-motion@0.5.2(react@18.2.0):
+    resolution: {integrity: sha512-9q3YAvHoUiWlP3cK0v+w1N5Z23HXMj4IF4YuvjvWegWqNPfLXsOBE/V7UvQGpXxHFKRQQcNcVQE31g9SB/6qgQ==}
+    peerDependencies:
+      react: ^0.14.9 || ^15.3.0 || ^16.0.0
+    dependencies:
+      performance-now: 0.2.0
+      prop-types: 15.8.1
+      raf: 3.4.1
+      react: 18.2.0
+    dev: false
+
   /react-next-tilt@0.4.3(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-zvvYa0g1xRGEAE2q7HHbQ68NCShrbhsKkczQ2IsoQulgXxbEIN9GILzGv4KvqvvCN/cZlSv8k9phpsG27RmSoQ==}
     peerDependencies:
@@ -2547,6 +2568,19 @@ packages:
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /react-scroll-horizontal@1.6.6(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-aR5xE+5EOTQhhrljztHT5qqKEiYU+mKTePaQZJQqikREN0brNfpZst7QP2iEeQo8aip+r7ljTxQZOmfT3OwdSg==}
+    peerDependencies:
+      prop-types: ^15.5.4
+      react: ^15.0.0 || ^16.0.0
+      react-dom: ^15.0.0 || ^16.0.0
+    dependencies:
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-motion: 0.5.2(react@18.2.0)
     dev: false
 
   /react@18.2.0:
@@ -3193,12 +3227,12 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /zustand@4.4.7(@types/react@18.2.46)(react@18.2.0):
-    resolution: {integrity: sha512-QFJWJMdlETcI69paJwhSMJz7PPWjVP8Sjhclxmxmxv/RYI7ZOvR5BHX+ktH0we9gTWQMxcne8q1OY8xxz604gw==}
+  /zustand@4.5.0(@types/react@18.2.46)(react@18.2.0):
+    resolution: {integrity: sha512-zlVFqS5TQ21nwijjhJlx4f9iGrXSL0o/+Dpy4txAP22miJ8Ti6c1Ol1RLNN98BMib83lmDH/2KmLwaNXpjrO1A==}
     engines: {node: '>=12.7.0'}
     peerDependencies:
       '@types/react': '>=16.8'
-      immer: '>=9.0'
+      immer: '>=9.0.6'
       react: '>=16.8'
     peerDependenciesMeta:
       '@types/react':
