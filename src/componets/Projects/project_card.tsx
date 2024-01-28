@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { ImNewTab } from "react-icons/im";
+import Marquee from "react-fast-marquee";
 
 interface ProjectCardProps {
   title: string;
@@ -14,11 +15,12 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
   const [Index, setIndex] = useState(0);
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % (props.image).length);
+      setIndex((prevIndex) => (prevIndex + 1) % props.image.length);
     }, 3000);
 
     return () => clearInterval(intervalId);
   }, []);
+  const tenCopies = Array(10).fill(null);
 
   return (
     <div
@@ -54,21 +56,11 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
         >
           <div className=" flex items-center justify-center text-lg uppercase text-white rounded-xl ">
             {hoverState ? (
-              <div id="move" className="flex flex-row gap-22">
-                <div className="mx-10">Checkout</div>
-                <div className="mx-10">Checkout</div>
-                <div className="mx-10">Checkout</div>
-                <div className="mx-10">Checkout</div>
-                <div className="mx-10">Checkout</div>
-                <div className="mx-10">Checkout</div>
-                <div className="mx-10">Checkout</div>
-                <div className="mx-10">Checkout</div>
-                <div className="mx-10">Checkout</div>
-                <div className="mx-10">Checkout</div>
-                <div className="mx-10">Checkout</div>
-                <div className="mx-10">Checkout</div>
-                <div className="mx-10">Checkout</div>
-                <div className="mx-10">Checkout</div>
+              <div className="flex flex-row gap-22">
+                <Marquee speed={200}>
+                  <div className="mx-9">Checkout</div>
+                  
+                </Marquee>
               </div>
             ) : (
               <div className="flex flex-row gap-2 items-center justify-center">

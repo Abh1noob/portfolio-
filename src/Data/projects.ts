@@ -6,7 +6,7 @@ export const projectList = [
       "/assets/Images/Projects/Cookoff-Admin/1.png",
       "/assets/Images/Projects/Cookoff-Admin/2.png",
       "/assets/Images/Projects/Cookoff-Admin/3.png",
-      "/assets/Images/Projects/Cookoff-Admin/4.png",
+      "/assets/Images/Projects/Cookoff-Admin/4.png", 
       "/assets/Images/Projects/Cookoff-Admin/5.png",
       "/assets/Images/Projects/Cookoff-Admin/6.png",
     ],

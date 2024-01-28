@@ -26,10 +26,12 @@ html{
   scroll-behavior: smooth;
   overflow: hidden;
 }
+
 /* Button Scroller */
+/* 
 #move {
   position: relative;
-  animation: mymove 400s infinite linear; /* Adjust the duration and other properties as needed */
+  animation: mymove 400s infinite linear;
 }
 @keyframes mymove {
   0% {
@@ -66,4 +68,4 @@ html{
   }
 }
 
-
+ */

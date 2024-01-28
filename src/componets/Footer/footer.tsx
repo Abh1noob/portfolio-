@@ -7,7 +7,7 @@ const Footer = () => {
   
   
   return (
-    <div className="w-[100vw]">
+    <div className="w-[100vw] bg-black text-white h-auto">
       <Image
         src={divider}
         alt="Divider"
