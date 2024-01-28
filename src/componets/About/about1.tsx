@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="flex flex-row items-center justify-around text-white h-[100vh] w-[100vw] bg-[#222831]">
+    <div className="flex flex-row items-center justify-around text-white h-[100vh] w-[100vw] bg-[#080808]">
       <div className="flex flex-col text-white h-full justify-center w-[40vw] break-words">
         <motion.p
           className="text-xl"
@@ -19,7 +19,7 @@ const About = () => {
           Hello, I am
         </motion.p>
         <motion.p
-          className={`text-7xl drop-shadow-2xl text-[#E84545]`}
+          className={`text-7xl drop-shadow-2xl text-[#c8f560]`}
           initial={{ x: -150, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.1 }}

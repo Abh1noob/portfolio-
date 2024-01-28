@@ -22,7 +22,7 @@ const fadeInAnimationVariants = {
 const Skills = () => {
   return (
     <>
-      <div className="h-[100vh] w-[100vw] bg-[#222831]">
+      <div className="h-[100vh] w-[100vw] bg-[#080808]">
         <div className="px-20">
           <div className="text-[70px] text-white font-tt_trailers tracking-wide">
             Skills
@@ -38,7 +38,7 @@ const Skills = () => {
                   spotGlareMaxOpacity={0.5}
                 >
                   <motion.li
-                    className="bg-[#E84545] rounded-xl px-5 py-3"
+                    className="bg-[#c8f560]/80 rounded-xl px-5 py-3"
                     key={i}
                     variants={fadeInAnimationVariants}
                     initial="initial"

@@ -24,7 +24,7 @@ export default function Main() {
 
   return (
     <>
-      <motion.main className="overflow-x-auto scroll-smooth">
+      <motion.main className="overflow-x-hidden  scroll-smooth">
         <title>Abhinav | Portfolio</title>
         <SmoothScrolling>
           <div className="absolute">
@@ -42,10 +42,10 @@ export default function Main() {
           <section id="Skills" className="scroll-mt-6">
             <Skills />
           </section>
-          <section id="Projects" className="scroll-mt-6 ">
+          <section id="Projects" className="scroll-mt-6">
             <Projects />
           </section>
-          <section id="Contact" className="scroll-mt-6 ">
+          <section id="Contact" className="scroll-mt-6">
             <Footer />
           </section>
         </SmoothScrolling>

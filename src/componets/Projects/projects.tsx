@@ -33,7 +33,7 @@ const Projects = () => {
   }, []);
   return (
     <>
-      <div className="bg-[#222831] w-[100vw]">
+      <div className="bg-[#080808] w-[100vw]">
         <div
           className="flex flex-col justify-evenly h-[100vh] px-20 w-auto"
           ref={triggerRef}
@@ -43,7 +43,7 @@ const Projects = () => {
           </div>
           <div
             ref={sectionRef}
-            className="flex flex-row gap-10  items-center w-full p-3  h-[80vh] scrollbar scrollbar-thumb-[#E84545] scrollbar-track-gray-100"
+            className="flex flex-row gap-10  items-center w-full p-3  h-[80vh] scrollbar scrollbar-thumb-[#E84545] scrollbar-track-gray-100 overflow"
           >
             {projectList.map((items, i) => {
               return (

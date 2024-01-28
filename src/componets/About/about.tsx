@@ -6,7 +6,7 @@ import gsap from "gsap";
 
 const About = () => {
   return (
-    <div className="h-auto w-[100vw]  bg-[#222831]">
+    <div className="h-auto w-[100vw]  bg-[#080808]">
       <About1 />
       <About2 />
       <About3 />

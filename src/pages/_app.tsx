@@ -52,7 +52,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={`${tt_trailers.variable} `} ref={ref}>
       <motion.div
-        className="fixed bg-[#E84545] w-[100vw] h-[1vh] z-50"
+        className="fixed bg-[#7862f8] w-[100vw] h-[1vh] z-50"
         style={{ scaleX: scrollYProgress, transformOrigin: "left" }}
       ></motion.div>
       <Component {...pageProps} />
