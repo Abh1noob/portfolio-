@@ -19,7 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
     }, 3000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [props.image.length]);
   const tenCopies = Array(10).fill(null);
 
   return (

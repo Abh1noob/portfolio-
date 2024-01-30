@@ -1,19 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
-import Navbar from "../Navbar/navbar";
 import { useLenis } from "@studio-freight/react-lenis";
-import { useScroll } from "framer-motion";
 
 const Home = () => {
-  const [scrollP, setScrollP] = useState(0);
-  const lenis = useLenis(({ scroll }) => {
-    setScrollP(scroll);
-  });
   return (
     <>
-
-
       <div className="h-[92vh] w-[100vw] flex items-center justify-center flex-col bg-[#080808] ">
         <div className="text-[300px] text-white font-tt_trailers tracking-wider">
           Abhinav

@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import ProjectCard from "./project_card";
 import { projectList } from "@/Data/projects";
 import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 const Projects = () => {
   const sectionRef = useRef(null);
