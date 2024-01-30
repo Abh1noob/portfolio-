@@ -29,7 +29,7 @@ export default function Main() {
         <SmoothScrolling>
           <div className="absolute">
             <div ref={ref} className="h-[60vh] w-screen"></div>
-            <section className={`${posY == 1 ? "fixed top-0 z-50" : ""}`}>
+            <section className={`${posY == 1 ? "fixed top-0 z-40" : ""}`}>
               <Navbar />
             </section>
           </div>

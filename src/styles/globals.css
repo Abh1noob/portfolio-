@@ -22,11 +22,35 @@ html.lenis {
   pointer-events: none;
 }
 
-html{
+html {
   scroll-behavior: smooth;
   overflow: hidden;
+  cursor: none;
 }
 
+#cursor-dot,
+#cursor-circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 50;
+  pointer-events: none;
+}
+
+#cursor-dot {
+  height: 10px;
+  width: 10px;
+  background-color: #7862f8;
+}
+
+#cursor-circle {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #7862f8;
+  opacity: 70%;
+}
 /* Button Scroller */
 /* 
 #move {

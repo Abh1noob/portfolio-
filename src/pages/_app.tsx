@@ -31,6 +31,7 @@ export default function App({ Component, pageProps }: AppProps) {
   });
 
   useEffect(() => {
+    //Text Reveal Animation
     gsap.registerPlugin(ScrollTrigger);
     const splitTypes = document.querySelectorAll("#text-reveal-animation");
     splitTypes.forEach((char, i) => {
@@ -48,13 +49,38 @@ export default function App({ Component, pageProps }: AppProps) {
         stagger: 0.1,
       });
     });
+
+    // Cursor Animation
+    const cursorDot = document.getElementById("cursor-dot");
+    const cursorCircle = document.getElementById("cursor-circle");
+    window.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+      if (cursorDot) {
+        cursorDot.style.left = `${posX}px`;
+        cursorDot.style.top = `${posY}px`;
+      }
+
+      if (cursorCircle) {
+        cursorCircle.animate(
+          {
+            left: `${posX}px`,
+            top: `${posY}px`,
+          },
+          { duration: 500, fill: "forwards" }
+        );
+      }
+    });
   }, []);
+
   return (
     <main className={`${tt_trailers.variable} `} ref={ref}>
       <motion.div
         className="fixed bg-[#7862f8] w-[100vw] h-[1vh] z-50"
         style={{ scaleX: scrollYProgress, transformOrigin: "left" }}
       ></motion.div>
+      <div id="cursor-dot" />
+      <div id="cursor-circle" />
       <Component {...pageProps} />
     </main>
   );

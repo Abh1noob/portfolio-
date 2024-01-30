@@ -50,13 +50,13 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
           href={props.redirect}
           target="_blank"
           rel="noopener noreferrer"
-          className={`h-[6vh] w-[80%]  cursor-pointer flex items-center justify-center flex-col transition-all duration-300 ease-in-out overflow-hidden ${
+          className={`h-[6vh] w-[80%] flex items-center justify-center flex-col transition-all duration-300 ease-in-out overflow-hidden ${
             hoverState ? "rounded-[40px] bg-black" : "rounded-md bg-[#7862f8]"
           }`}
         >
           <div className=" flex items-center justify-center text-lg uppercase text-white rounded-xl ">
             {hoverState ? (
-              <div className="flex flex-row gap-22">
+              <div className="flex flex-row gap-22 cursor-none">
                 <Marquee speed={200}>
                   <div className="mx-9">Checkout</div>
                 </Marquee>

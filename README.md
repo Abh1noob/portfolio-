@@ -1,11 +1,11 @@
 # Checklist:
 
-- [ ] Hover Effect on skill card
+- [x] Hover Effect on skill card
 - [ ] Navbar current section indicator
-- [ ] Moving navbar as per section in view
+- [x] Moving navbar as per section in view
 - [ ] Complete about section
-- [ ] Make project section horizontal scroll better
-- [ ] Add cursor effect
+- [x] Make project section horizontal scroll better
+- [x] Add cursor effect
 - [ ] Add background parallax effect
 - [ ] Complete footer section
 
