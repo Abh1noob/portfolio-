@@ -24,7 +24,7 @@ export default function Main() {
 
   return (
     <>
-      <motion.main className="overflow-x-hidden  scroll-smooth">
+      <motion.main className=" scroll-smooth">
         <title>Abhinav | Portfolio</title>
         <SmoothScrolling>
           <div className="absolute">

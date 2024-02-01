@@ -1,49 +1,26 @@
 import React, { useEffect, useRef } from "react";
 import ProjectCard from "./project_card";
 import { projectList } from "@/Data/projects";
-import gsap from "gsap";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const Projects = () => {
-  const sectionRef = useRef(null);
-  const triggerRef = useRef(null);
-  useEffect(() => {
-    const pin = gsap.fromTo(
-      sectionRef.current,
-      {
-        translateX: 0,
-      },
-      {
-        translateX: "-100vw",
-        ease: "none",
-        duration: 1,
-        scrollTrigger: {
-          trigger: triggerRef.current,
-          start: "top top",
-          end: "1000 top",
-          scrub: true,
-          markers: false,
-          pin: true,
-        },
-      }
-    );
-    return () => {
-      pin.kill();
-    };
-  }, []);
+  const targetRef = useRef<HTMLDivElement | null>(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
+
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
   return (
     <>
-      <div className="bg-[#080808] w-[100vw]">
-        <div
-          className="flex flex-col justify-evenly h-[100vh] px-20 w-auto"
-          ref={triggerRef}
-        >
-          <div className=" text-[70px] text-white font-tt_trailers tracking-wide">
+      <section
+        ref={targetRef}
+        className="relative h-[300vh] bg-[#080808] pl-20"
+      >
+        <div className="sticky top-0 flex  flex-col h-[110vh]   overflow-hidden  ">
+          <div className="text-[70px] text-white font-tt_trailers tracking-wide text-left mt-6">
             Projects
           </div>
-          <div
-            ref={sectionRef}
-            className="flex flex-row gap-10  items-center w-full p-3  h-[80vh] scrollbar scrollbar-thumb-[#E84545] scrollbar-track-gray-100 overflow"
-          >
+          <motion.div style={{ x }} className="flex gap-4 mt-10">
             {projectList.map((items, i) => {
               return (
                 <div className="w-auto" key={i}>
@@ -57,9 +34,9 @@ const Projects = () => {
                 </div>
               );
             })}
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
