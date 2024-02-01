@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import ProjectCard from "./project_card";
 import { projectList } from "@/Data/projects";
 import { motion, useScroll, useTransform } from "framer-motion";
