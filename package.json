@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@studio-freight/react-lenis": "^0.0.43",
+    "axios": "^1.6.7",
     "framer-motion": "^11.0.3",
     "gsap": "^3.12.5",
     "lottie-react": "^2.4.0",
     "next": "14.1.0",
+    "nodemailer": "^6.9.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.6.3",
@@ -25,6 +27,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.15",
+    "@types/nodemailer": "^6.4.14",
     "@types/react": "^18.2.51",
     "@types/react-dom": "^18.2.18",
     "autoprefixer": "^10.4.17",

@@ -2,7 +2,6 @@ import React from "react";
 import About1 from "./about1";
 import About2 from "./about2";
 import About3 from "./about3";
-import gsap from "gsap";
 
 const About = () => {
   return (

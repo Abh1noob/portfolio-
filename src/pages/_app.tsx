@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
   });
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    console.log("Page scroll: ", latest);
+    // console.log("Page scroll: ", latest);
     setPosY(latest);
   });
 
@@ -36,7 +36,6 @@ export default function App({ Component, pageProps }: AppProps) {
     const splitTypes = document.querySelectorAll("#text-reveal-animation");
     splitTypes.forEach((char, i) => {
       const text = new SplitType(char as HTMLElement, { types: "words" });
-      console.log(text);
       gsap.from(text.words, {
         scrollTrigger: {
           trigger: char,

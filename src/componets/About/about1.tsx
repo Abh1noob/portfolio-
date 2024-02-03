@@ -27,7 +27,10 @@ const About = () => {
             once: true,
           }}
         >
+
+
           Abhinav Ganeshan
+
         </motion.p>
       </div>
       <Lottie
