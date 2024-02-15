@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
       <button
         onClick={() => sendEmail({ body: "Hello from abhinavganeshan.in" })}
-        className="h-[100px] w-[500px] bg-black/10 bottom-0"
+        className="h-[100px] w-[200px] bg-black/10 bottom-0"
       >
         Send Email
       </button>

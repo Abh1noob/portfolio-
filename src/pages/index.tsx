@@ -27,16 +27,16 @@ export default function Main() {
       <motion.main className=" scroll-smooth">
         <title>Abhinav | Portfolio</title>
         <SmoothScrolling>
-          <div className="absolute">
+          {/* <div className="absolute">
             <div ref={ref} className="h-[60vh] w-screen"></div>
             <section className={`${posY == 1 ? "fixed top-0 z-40" : ""}`}>
               <Navbar />
             </section>
-          </div>
+          </div> */}
           <section id="Home" className="scroll-mt-12">
             <Home />
           </section>
-          <section id="About" className="scroll-mt-6">
+          {/* <section id="About" className="scroll-mt-6">
             <About />
           </section>
           <section id="Skills" className="scroll-mt-6">
@@ -47,7 +47,7 @@ export default function Main() {
           </section>
           <section id="Contact" className="scroll-mt-6">
             <Footer />
-          </section>
+          </section> */}
         </SmoothScrolling>
       </motion.main>
     </>
