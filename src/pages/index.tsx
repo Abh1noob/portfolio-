@@ -9,10 +9,11 @@ import Home from "@/componets/Home/home";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { useRef } from "react";
 import Navbar from "@/componets/Navbar/navbar";
-
+//https://ui.aceternity.com/components/background-gradient-animation
 export default function Main() {
   const ref = useRef(null);
   const [posY, setPosY] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
@@ -21,22 +22,37 @@ export default function Main() {
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     setPosY(latest);
   });
+  useEffect(() => {
+    alert("Website is still under development");
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+  }, []);
 
   return (
     <>
-      <motion.main className=" scroll-smooth">
+      <motion.main className="scroll-smooth">
         <title>Abhinav | Portfolio</title>
         <SmoothScrolling>
-          {/* <div className="absolute">
-            <div ref={ref} className="h-[60vh] w-screen"></div>
-            <section className={`${posY == 1 ? "fixed top-0 z-40" : ""}`}>
+          {isMobile ? (
+            <div className="h-min ">
               <Navbar />
-            </section>
-          </div> */}
+            </div>
+          ) : (
+            <div className="absolute">
+              <div ref={ref} className="h-[60vh] w-screen"></div>
+              <section className={`${posY == 1 ? "fixed top-0 z-40" : ""}`}>
+                <Navbar />
+              </section>
+            </div>
+          )}
+
           <section id="Home" className="scroll-mt-12">
             <Home />
           </section>
-          {/* <section id="About" className="scroll-mt-6">
+          <section id="About" className="scroll-mt-6">
             <About />
           </section>
           <section id="Skills" className="scroll-mt-6">
@@ -47,7 +63,7 @@ export default function Main() {
           </section>
           <section id="Contact" className="scroll-mt-6">
             <Footer />
-          </section> */}
+          </section>
         </SmoothScrolling>
       </motion.main>
     </>
