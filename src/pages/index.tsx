@@ -36,34 +36,37 @@ export default function Main() {
       <motion.main className="scroll-smooth">
         <title>Abhinav | Portfolio</title>
         <SmoothScrolling>
-          {isMobile ? (
-            <div className="h-min ">
-              <Navbar />
-            </div>
-          ) : (
-            <div className="absolute">
-              <div ref={ref} className="h-[60vh] w-screen"></div>
-              <section className={`${posY == 1 ? "fixed top-0 z-40" : ""}`}>
+          <div className="watermark">sus</div>
+          <div className="mainBody">
+            {isMobile ? (
+              <div className="h-min ">
                 <Navbar />
-              </section>
-            </div>
-          )}
+              </div>
+            ) : (
+              <div className="absolute">
+                <div ref={ref} className="h-[60vh] w-screen"></div>
+                <section className={`${posY == 1 ? "fixed top-0 z-40" : ""}`}>
+                  <Navbar />
+                </section>
+              </div>
+            )}
 
-          <section id="Home" className="scroll-mt-12">
-            <Home />
-          </section>
-          <section id="About" className="scroll-mt-6">
-            <About />
-          </section>
-          <section id="Skills" className="scroll-mt-6">
-            <Skills />
-          </section>
-          <section id="Projects" className="scroll-mt-6">
-            <Projects />
-          </section>
-          <section id="Contact" className="scroll-mt-6">
-            <Footer />
-          </section>
+            <section id="Home" className="scroll-mt-12">
+              <Home />
+            </section>
+            <section id="About" className="scroll-mt-6">
+              <About />
+            </section>
+            <section id="Skills" className="scroll-mt-6">
+              <Skills />
+            </section>
+            <section id="Projects" className="scroll-mt-6">
+              <Projects />
+            </section>
+            <section id="Contact" className="scroll-mt-6">
+              <Footer />
+            </section>
+          </div>
         </SmoothScrolling>
       </motion.main>
     </>

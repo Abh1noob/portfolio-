@@ -51,3 +51,24 @@ html {
   border: 3px solid #7862f8;
   opacity: 70%;
 }
+
+.watermark {
+  display: none;
+}
+
+@media print {
+  .mainBody {
+    display: none;
+  }
+
+  .watermark {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: rgb(0, 0, 0); /* Adjust the opacity as needed */
+    pointer-events: none;
+  }
+}
